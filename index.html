@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Python Programming - Attendance System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .course-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            text-align: left;
+        }
+        
+        .course-info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .course-info p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .course-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .detail-item {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .detail-label {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 5px;
+        }
+        
+        .detail-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .buttons {
+            display: grid;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            padding: 18px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .btn-student {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-student:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-teacher {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        
+        .btn-teacher:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(245, 87, 108, 0.4);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🎓</div>
+        <h1>Attendance & Performance System</h1>
+        <p class="subtitle">B.M.S. College of Engineering</p>
+        
+        <div class="course-info">
+            <h3>Advanced Python Programming</h3>
+            <p><strong>Course Code:</strong> 23IS5PWAPP</p>
+            <p><strong>Department:</strong> Information Science and Engineering</p>
+            
+            <div class="course-details">
+                <div class="detail-item">
+                    <div class="detail-label">Credits</div>
+                    <div class="detail-value">2</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Total Hours</div>
+                    <div class="detail-value">48</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">CIE Marks</div>
+                    <div class="detail-value">50</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">SEE Marks</div>
+                    <div class="detail-value">100</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <a href="student.html" class="btn btn-student">
+                👨‍🎓 Student Login / Register
+            </a>
+            <a href="teacher.html" class="btn btn-teacher">
+                👨‍🏫 Teacher Login / Register
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>Demonstrating: OOP, Files, Database, NumPy, Pandas</p>
+        </div>
+    </div>
+</body>
+</html>
